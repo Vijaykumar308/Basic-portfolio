@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		let string = "3 4";
+		let list = ["zero","one","two","three","four",
+		"five","six","seven","eight","nine"];
+		for(value of string){
+			// debugger;
+			if(Number(value)) {
+				index = string.indexOf(value);
+			    //x = string.replace(4,list[7])
+			    x = string.replace(value,list[Number(value)]);
+			    console.log(x);
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navigation">
+			<a href="#">Home</a>
+			<a href="#about">About</a>
+			<a href="#work">Work</a>
+		</nav>
+
+		<div class="logo">
+			<h2>Vijay Kumar</h2>	
+		</div>
+
+		<div class="followMe">
+			<i class="fab fa-instagram"style="color:#fff"></i>
+		   <a href="https://www.instagram.com/mr.vijay.kumar308/" target="_blank">Instagram</a>
+		</div>
+
+		<div class="menu-icon">
+			<i class="fas fa-bars"style="color:#fff"></i>
+		</div>
+	</header>
+
+	<section class="main-contant">
+		<div class="left-side">
+			<h2>Portfolio</h2>
+			<h1>Vijay Kumar</h1>
+			<p style="text-indent: 0px;">Hello :)</p>
+			<p>I'm Vijay Kumar. I've done my graudution in BACHOLOR OF COMPUTER APPLICATION [BCA] from Guru Nanak Dev University College Verka. I've a interest in web development. Therefore i've been learn HTML, CSS and Javascript for front-end. In order to work in backend, I've been learn the core PHP as well as basics of mysql.</p>
+			<!-- <p>Apart from this, I'm foucing on learn as much as I can and improving my knowledge towords programming So that I can be a better programmer than my past.</p> -->
+			<a href="#about"><button class="btn About-btn">About Me</button></a>
+			<a href="#work"><button class="btn About-btn">My Projects</button></a>
+		</div>
+
+		<div class="right-side">
+			<img src="sideimg.png" alt="myImage">
+		</div>
+	</section>
+
+	<section class="about-me" id="about">
+			<h1 class="heading">About Me</h1>
+			<hr class="hr-line"/>
+		<div class="contant-both">
+			<div class="myPic">
+				<img src="vijaykumar.jpg">
+			</div>
+
+			<div class="contant">
+				<h2>About me</h2>
+				<p class="para">My name is <strong>VIJAY KUMAR.</strong> I've been done my Graguation in Bachelor of Computer Application from Guru Nanak Dev University. There are 5 member in my family. They are my father mother elder bother and sister and me.  I am thankful to God that he gives me such a wonderful family.
+				</p>		
+		
+				<p style="margin-top: 3rem;" class="para">Apart from this, My hobbies are Playing cricket listening music and exploring myself. I've an interset in web Development. Therfore, I learn HTML CSS Javascript Core PHP and MySQL. Other than that, I'm good goggler too which help me to find my problem very easily on the Internet. </p>
+			</div>
+		</div>
+	</section>
+
+	<!-- work section starts -->
+	<section class="work about-me" id="work">
+		<h1 class="heading cus-h1">MyProjects</h1>
+		<hr class="hr-line"/>
+		<div class="full-work">
+			<div class="text-section contant">
+				<p class="para">I've done many projects in my graduation. In all, I was spending my more time to make web design responsive. But there is some fully functionality website also that I created such as <strong>Online Images sharing, stopwatch, Choose One etc.</strong>
+				</p>
+				<p class="para">Apart from this, I can work on wordpress, sopify, eas well. I've watched the youtube tutorial on wordpress developemt. </p>
+			</div>
+			<div class="project-section myPic">
+				<img src="projectsImg2.jpg">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="foo">
+			<div class="footer-title">
+				<h1>copyrights 2021-2023 &copy jwvijaykumar@gmail.com</h1>
+			</div>
+			<div class="socail-icon footer-title">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"style="color:#fff;padding: 0rem 2rem;"></i>	
+				<i class="fab fa-facebook-messenger"></i>
+			</div>
+		<!-- <hr class="hr-line"/> -->
+		<div class="menus footer-title">
+				<a href="#" style="color: #fff;">Home</a>
+				<a href="#about" style="color: #fff;">About</a>
+				<a href="#work" style="color: #fff;">Projects</a>
+		</div>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function(){
+			$(".fas").click(function(){
+				$(".navigation").toggle(1000);
+				$(".followMe").toggle(1000);
+			});
+		});
+	</script>
+</body>
+</html>
+

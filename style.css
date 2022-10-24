@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{margin: 0;padding: 0; box-sizing:border-box; font-family: 'Roboto Slab', serif;}
+html,body{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+header{
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	/*background-color: #FBCBBC;*/
+	background-color: black;
+	font-size: 1.7rem;
+	box-shadow: 1px 1px 1px #fff;
+	position: sticky;
+	top: 0;
+}
+header .navigation{
+	/*background-color: red;*/
+}
+.navigation a:first-child{
+	margin-left: -5rem;
+	color: red;
+}
+.navigation a{
+	color: #E27C5C;
+	color: #fff;
+	margin: 0rem 1.3rem;
+	font-weight: bold;
+	letter-spacing: .1rem;
+	text-decoration: none;
+}
+header .logo{
+	padding: 1.7rem;
+	font-size: 1.7rem;
+	color: #E27C5C;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	display: flex;
+	justify-content: center;
+}
+.followMe a{
+	text-decoration: none;
+	color: #E27C5C;
+	color: #fff;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	margin: 0px .5rem;
+}
+.menu-icon{
+	display: none;
+	font-size: 3rem;
+}
+/*==============main contant start==============*/
+.main-contant{
+	width: 100vw;
+	min-height: 89.6vh;
+	display: flex;
+	background-color: lightcoral;
+}
+.main-contant .left-side{
+	width: 50%;
+	color: #fff;
+	/*background-color: lightsalmon;*/
+	/*background-color: lightcoral;*/
+	padding: 7rem 6rem;
+	text-align: justify;
+}
+.main-contant .left-side h1{
+	font-size: 6rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 1rem 0rem;
+	text-shadow: 2px 2px 2px black;
+}
+.main-contant .left-side h2{
+	letter-spacing: 1px;
+}
+.main-contant .left-side p{
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	/*color: g;*/
+	margin-top:10px;
+	text-indent: 2rem;
+	line-height: 3rem;
+}
+.main-contant .left-side .btn{
+	border: none;
+	outline: none;
+	background: none;
+	margin-right: 2rem;
+}
+.main-contant .left-side .About-btn{
+	margin-top: 2rem;
+	padding: 1rem 4rem;
+	color: #fff;
+	border: 2px solid #fff;
+	font-weight: bold;
+	transition: .3s all linear;
+}
+.main-contant .left-side .About-btn:hover{
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+}
+.main-contant .right-side{
+	width: 50%;
+	margin-right: 2rem;
+	/*padding: 10rem 1rem;*/
+	display: flex;
+	align-items: center;
+}
+.main-contant .right-side img{
+	width: 100%;	
+	/*min-height: 306px;*/
+	border: 2px solid black;
+	max-height: 40rem;
+	border-radius: 1rem;
+}
+
+	/*about me*/
+.about-me{
+	margin: 5rem 0rem;
+	padding-top: 5rem;
+}
+.contant-both{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	margin-top:  3rem;
+}
+.about-me .heading{
+	font-size: 3.7rem;
+	margin: 3rem 0rem;
+	text-align: center;
+}
+.hr-line{
+	width: 38rem;
+	margin: auto;
+	color: #ee1435;
+}
+.myPic{
+	width: 35%;
+}
+.myPic img{
+	width: 100%;
+	margin-top: 2rem;
+	border: 2px groove black;
+	max-height: 35rem;
+}
+.contant{
+	width: 50%;
+}
+.contant h2{
+	font-size: 2.7rem;
+	margin-bottom: 1rem;
+}
+.para{
+	font-size: 1.7rem;
+	text-align: justify;
+	text-indent: 4rem;
+	line-height: 3rem;
+	word-spacing: .7rem;
+}
+.work{
+	background-color: rgba(244, 244, 244,.4);
+	padding-top: 1rem;
+}
+
+.full-work{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	margin-top:  4rem;
+	align-items: center;
+}
+.project-section{
+	width: 35%;
+}
+.project-section img{
+	border: 2px solid black;
+	width: 100%;
+	box-shadow: 1px 4px 5px 5px lightgrey;
+}
+.text-section{
+	width: 50%;
+}
+.foo{
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	background-color: rebeccapurple;
+	background: #373B44;  /* fallback for old browsers */
+	background: linear-gradient(to right, #4286f4, #373B44);
+	color: #fff;
+	font-size: 1rem;
+	padding: 1rem 7rem;
+	letter-spacing: 2px;
+}
+.foo h1{
+	font-size: 1.4rem;
+}
+.socail-icon{
+	font-size: 2rem;
+}
+.menus{
+	text-align: center;
+	font-size: 1.3rem;
+}
+.menus a{
+	padding: 1rem;
+	text-decoration: none;
+}
+@media screen and (max-width: 867px){
+	header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
+	.navigation a:first-child{
+		margin: 0rem;
+	}
+	.logo h2{
+		font-size: 3rem;
+	}
+	.navigation{
+		font-size: 2rem;
+		padding-top: 2rem;
+		display: none;
+	}
+	.navigation a{
+		margin-left: 3rem;
+	}
+
+
+	.followMe{
+		padding-bottom: 2rem;
+		font-size: 2rem;
+		display: none;
+	}
+	.menu-icon{
+		display: block;		
+		position: absolute;
+		right: 1.7rem;
+	}
+	/*main contant Responsive*/
+	.main-contant{
+		width: 100vw;
+		display: flex;
+		background-color: lightcoral;
+		flex-direction: column-reverse;
+	}
+	.main-contant .left-side{
+		width: 100vw;
+		/*background-color: lightsalmon;*/
+		padding: 3rem 2rem;
+	}	
+	.main-contant .left-side h1{
+		font-size: 4rem;
+	}
+	.main-contant .left-side .About-btn{
+		margin-top: 2rem;
+		padding: 1rem 3rem;	
+	}
+	.main-contant .right-side{
+		width: 100vw;
+		padding: 0rem;
+	}
+	.main-contant .right-side img{
+		border-radius: 0rem;
+		/*border: 3rem solid black;*/
+		background: lightgrey;
+	}
+	.contant-both{
+		display: flex;
+		flex-direction: column;
+	}
+	.myPic{
+		width: 75%;
+		margin: 0 auto;
+	}
+	.contant{
+		width: 75%;
+		margin: 5rem auto;
+	}
+	.full-work{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.footer-title{
+		padding-top: 3rem;
+		width: 100vw;
+		font-size: 2rem;
+		text-align: center;
+	}
+	.menus{
+		padding-bottom: 1rem;
+	}
+
+}
